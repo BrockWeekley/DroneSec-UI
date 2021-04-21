@@ -2,5 +2,8 @@
   height: 50em;
   width: 100%;
   text-align: center;
-  border: solid green 2px;
+  /* border: solid green 2px; */
+}
+.secbox {
+  height: 10%;
 }

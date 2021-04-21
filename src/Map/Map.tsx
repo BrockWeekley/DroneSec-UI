@@ -13,7 +13,7 @@ const Map: React.FC = () => {
         <ReactMapGl
             {...viewport}
             mapboxApiAccessToken={'pk.eyJ1IjoiYnJhY2siLCJhIjoiY2thZzZ1Ym92MDRpazJ4bzF2ZzN1MjBzbSJ9.Zy7oCF8S32eMDffK9HZkpg'}
-            width="100%"
+            width="75%"
             height="100%"
             onViewportChange={(viewport: React.SetStateAction<{ latitude: number; longitude: number; zoom: number; }>) => setViewport(viewport)}
         />
