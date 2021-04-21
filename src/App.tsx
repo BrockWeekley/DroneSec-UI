@@ -4,11 +4,13 @@ import Map from './Map/Map';
 import TimeSlider from './TimeSlider/TimeSlider';
 import SecurityBox from './Security/SecurityBox';
 import PacketBar from './PacketBar/PacketBar';
+
 const App: React.FC = () => {
+  
   return (
     <div className="App">
       <TimeSlider></TimeSlider>
-      <div style={{"height" : "60%", "display" : "flex"}}>
+      <div style={{"height" : "70vh", "display" : "flex"}}>
       <Map />
       <PacketBar></PacketBar>
       </div>
