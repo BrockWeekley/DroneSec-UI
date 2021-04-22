@@ -1,14 +1,14 @@
 import * as React from 'react';
-import MockData from '../data/MOCK_DATA.json';
-const PacketBar: React.FC = () => {
+import MockData from '../assets/data/MOCK_DATA.json';
+interface Packet {
+    id: number;
+    packet_dest: string;
+    latency: number;
+}
 
-    interface Packet {
-        id: number;
-        packet_dest: string;
-        latency: number;
-      }
+const PacketBar: React.FC = () => {
       
-      const packet_list = MockData.map((packet) =>
+      const packet_list = MockData.map((packet: Packet) =>
         <p key={packet.id}>[{packet.id}]: {packet.packet_dest}   Latency: {packet.latency}</p>
       );
 

@@ -1,0 +1,11 @@
+.drone-icon {
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+}
+
+.drone-info {
+    width: 4em;
+    height: 4em;
+    border: solid black 2px;
+}
