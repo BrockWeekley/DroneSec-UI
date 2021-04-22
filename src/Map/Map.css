@@ -5,7 +5,11 @@
 }
 
 .drone-info {
-    width: 4em;
-    height: 4em;
-    border: solid black 2px;
+    width: 12em;
+    height: 6em;
+    border: solid lightgrey 1px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 6px grey;
+    border-radius: 4px;
+    margin: 1em;
 }
