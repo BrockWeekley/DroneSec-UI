@@ -1,10 +1,11 @@
 import * as React from 'react';
+import './Status.css';
 
 const ContainerStatus: React.FC = () => {
 
     return(
-        <div className="secbox" >
-            ContainerStatus Component   
+        <div className="container all-clear" >
+            No attacks detected - all clear
         </div>
     );
 };

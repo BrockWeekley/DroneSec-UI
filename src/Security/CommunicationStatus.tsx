@@ -1,10 +1,11 @@
 import * as React from 'react';
+import './Status.css';
 
 const CommunicationStatus: React.FC = () => {
 
     return(
-        <div>
-            CommunicationStatus Component   
+        <div className="container all-clear">
+            All containers operational
         </div>
     );
 };
