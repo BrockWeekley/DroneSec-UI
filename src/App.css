@@ -7,3 +7,15 @@
 .secbox {
   height: 10%;
 }
+
+#react-chrono-timeline {
+  display: none !important;
+}
+
+.timeline-item-title {
+  display: none !important;
+}
+
+.active {
+  display: inline !important;
+}

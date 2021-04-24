@@ -9,10 +9,10 @@ const App: React.FC = () => {
   
   return (
     <div className="App">
-      <TimeSlider></TimeSlider>
+      <TimeSlider />
       <div style={{"height" : "70vh", "display" : "flex"}}>
       <Map />
-      <PacketBar></PacketBar>
+      <PacketBar />
       </div>
       <SecurityBox/>
     </div>
