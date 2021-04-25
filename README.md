@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# DroneNet Security
+
+This is the frontend app for Secured DroneEdge-as-a-Service project.
+The live App is running at: https://drone-security.web.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

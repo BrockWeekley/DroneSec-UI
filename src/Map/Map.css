@@ -4,12 +4,26 @@
     cursor: pointer;
 }
 
+.marker {
+  z-index: 100;
+}
+
+.map-container {
+  width: 75%;
+  height: 100%;
+  position: relative;
+}
+
 .drone-info {
+    position: absolute;
+    line-height: 1.5em;
     width: 12em;
-    height: 6em;
     border: solid lightgrey 1px;
-    background-color: whitesmoke;
+    background-color: white;
     box-shadow: 3px 3px 6px grey;
     border-radius: 4px;
     margin: 1em;
+    padding: 1em;
+    text-align: center;
+    z-index: 10000;
 }
