@@ -14,7 +14,7 @@ const TimeSlider: React.FC<{onChangeValue:any}> = (props) => {
         setSlide(e.target.value);
       };
     return(
-        <div>
+        <div className="sliderDiv">
              <input type="range"
       min="0" max="600 " 
       value={state}
