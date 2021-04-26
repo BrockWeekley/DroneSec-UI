@@ -40,7 +40,7 @@ const drones: any = [
 ];
 
 const Map: React.FC = () => {
-
+  const [dronePos, setDronePos] = useState(drones);
   const [droneDisplay, setDroneDisplay] = useState({
     id: 1,
     latitude: 38.9517,
@@ -64,14 +64,44 @@ const Map: React.FC = () => {
 
   const geojson: GeoJSON.Feature = Missouri;
 
-  const droneMarkers = React.useMemo(() => drones.map(
+  const droneMarkers = React.useMemo(() => dronePos.map(
     (drone: any) => (
       <Marker latitude={drone.latitude} longitude={drone.longitude} key={drone.id} className="marker">
         <img onClick={() => { setDroneDisplay(drone) }} className="drone-icon" src={droneImg} alt="drone" />
       </Marker>
     ),
-  ), []);
-
+  ), [dronePos]);
+  const changeDrone= () => {
+    console.log(dronePos);
+    setDronePos([{
+      id: 1,
+      latitude: 38.9517,
+      longitude: -91.3341
+    },
+    {
+      id: 2,
+      latitude: 40.1231,
+      longitude: -93.1969
+    },
+    {
+      id: 3,
+      latitude: 37.9485,
+      longitude: -91.7715
+    },
+    {
+      id: 4,
+      latitude: 40.3461,
+      longitude: -94.8725
+    },
+    {
+      id: 5,
+      latitude: 38.6270,
+      longitude: -90.1994
+    }
+  ]);
+    // drones[1].latitude = 0;
+    // console.log(dronePos);
+  }
   return (
     <div className="map-container">
       <div className="drone-info">
@@ -91,6 +121,9 @@ const Map: React.FC = () => {
           <Layer {...stateLayer} />
         </Source>
       </ReactMapGl>
+      <button onClick={() =>{
+        changeDrone();
+      }}>Clickme</button>
     </div>
   );
 };
