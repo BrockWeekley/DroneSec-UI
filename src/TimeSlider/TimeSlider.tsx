@@ -14,13 +14,18 @@ const TimeSlider: React.FC<{onChangeValue:any}> = (props) => {
         setSlide(e.target.value);
       };
     return(
-        <div className="sliderDiv">
-             <input type="range"
-      min="0" max="600 " 
-      value={state}
-      onChange={handleChange} className="slider" id="myRange"/>
+        <div className="dropdownDiv">
+        <select className="dropdown" name="experiment">
+            <option onChange={handleChange} value="1">Experiment 1</option>
+            <option onChange={handleChange} value="2">Experiment 2</option>
+            <option onChange={handleChange} value="2">Experiment 3</option>
+            <option onChange={handleChange} value="2">Experiment 4</option>
+            <option onChange={handleChange} value="2">Experiment 5</option>
+        </select>
         </div>
     );
+
+    //<input type="range" min="0" max="600 " value={state} onChange={handleChange} className="slider" id="myRange"/>
 };
 
 export default TimeSlider;
