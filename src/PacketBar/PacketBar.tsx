@@ -11,14 +11,32 @@ import './PacketBar.css'
 const PacketBar: React.FC<{jdata:any}> = (props) =>{
 
   const packet_list = props.jdata.map((packet: any) =>
-    <p className="packet" key={packet.time}>[{packet.time}]: {packet.PacketsRecieved} &nbsp;&nbsp;&nbsp;&nbsp; Packets Lost: {packet.PacketsLost}</p>
+  <tr>
+    <td id="width">{packet.time}</td>
+    <td id="width">{packet.PacketsRecieved}</td>
+    <td id="width">{packet.ACKsRecieved}</td>
+    <td id="width">{packet.PacketsLost}</td>
+    <td id="width">{packet.GoodPut}</td>
+  </tr>
   );
 
   return (
     <div className="packet-bar-component">
-      <div className="title"><h4>Packets</h4></div>
+      <div className="title">
+        <table className="ui celled table">
+          <thead>
+            <th style={{fontSize:"0.7em"}} id="width " scope="col">time</th>
+            <th style={{fontSize:"0.7em"}} id="width" scope="col">recieved</th>
+            <th style={{fontSize:"0.7em"}} id="width" scope="col">ack</th>
+            <th style={{fontSize:"0.7em"}} id="width" scope="col">lost</th>
+            <th style={{fontSize:"0.7em"}} id="width" scope="col">goodput</th>
+          </thead>
+        </table>
+      </div>
       <div className="packets">
+        <table className="ui celled table">
         {packet_list}
+        </table>
       </div>
     </div>
   );

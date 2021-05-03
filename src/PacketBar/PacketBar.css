@@ -8,7 +8,7 @@
 
 .title * {
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
 .packet-bar-component {
@@ -36,4 +36,10 @@
 
 .packet:nth-child(odd) {
   background-color: white;
+}
+
+#width {
+    width: 20% !important;
+    overflow: hidden !important;
+    text-align: center;
 }
