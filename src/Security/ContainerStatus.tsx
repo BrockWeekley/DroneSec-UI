@@ -1,11 +1,11 @@
 import * as React from 'react';
 import './Status.css';
 
-const ContainerStatus: React.FC = () => {
-
+const ContainerStatus: React.FC <{status:any, passStyle:any}> = (props) =>{
+    const containerContent = props.status;
     return(
-        <div className="container all-clear" >
-            No attacks detected - all clear
+        <div className={"containerie " + props.passStyle} >
+            {containerContent}
         </div>
     );
 };

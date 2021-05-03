@@ -122,9 +122,9 @@ const Map: React.FC<{dataIndex:any}> = (props) => {
           <Layer {...stateLayer} />
         </Source>
       </ReactMapGl>
-      <button onClick={() =>{
+      {/* <button onClick={() =>{
         changeDrone();
-      }}>Clickme</button>
+      }}>Clickme</button> */}
     </div>
   );
 };

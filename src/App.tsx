@@ -19,9 +19,9 @@ const App: React.FC = () => {
       <TimeSlider onChangeValue={changeIndex} />
       <div style={{ "height": "70vh", "display": "flex" }}>
         <Map dataIndex = {index}/>
-        <PacketBar jdata = {JsonData[index]} />
+        <PacketBar jdata = {JsonData[index].networkData} />
       </div>
-      <SecurityBox />
+      <SecurityBox jdata = {JsonData[index].ContainerStatus}/>
     </div>
   );
 };

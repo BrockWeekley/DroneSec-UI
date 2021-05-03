@@ -4,9 +4,9 @@ import './TimeSlider.css'
 import { useState } from 'react';
 const TimeSlider: React.FC<{onChangeValue:any}> = (props) => {
     const [state, setSlide] = useState(0);
-    interface Props {
-        onChangeValue: any;
-      }
+    // interface Props {
+    //     onChangeValue: any;
+    //   }
       
     const handleChange = (e:any) => {
         props.onChangeValue(e);
