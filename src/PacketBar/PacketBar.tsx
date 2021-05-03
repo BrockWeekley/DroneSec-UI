@@ -2,16 +2,16 @@ import * as React from 'react';
 import MockData from '../assets/data/MOCK_DATA.json';
 import './PacketBar.css'
 
-interface Packet {
-  id: number;
-  packet_dest: string;
-  latency: number;
-}
+// interface Packet {
+//   time: number;
+//   PacketsRecieved: string;
+//   PacketsLost: number;
+// }
 
-const PacketBar: React.FC = () => {
+const PacketBar: React.FC<{jdata:any}> = (props) =>{
 
-  const packet_list = MockData.map((packet: Packet) =>
-    <p className="packet" key={packet.id}>[{packet.id}]: {packet.packet_dest} &nbsp;&nbsp;&nbsp;&nbsp; Latency: {packet.latency}</p>
+  const packet_list = props.jdata.map((packet: any) =>
+    <p className="packet" key={packet.time}>[{packet.time}]: {packet.PacketsRecieved} &nbsp;&nbsp;&nbsp;&nbsp; Packets Lost: {packet.PacketsLost}</p>
   );
 
   return (
