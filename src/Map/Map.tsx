@@ -76,7 +76,7 @@ const Map: React.FC<{dataIndex:any}> = (props) => {
         <img onClick={() => { setDroneDisplay(drone) }} className="drone-icon" src={droneImg} alt="drone" />
       </Marker>
     ),
-  ), [dronePos]);
+  ), [dronePos, count]);
   // const changeDrone= () => {
   //   console.log(dronePos);
   //   setDronePos( [ {
