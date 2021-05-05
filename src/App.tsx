@@ -6,12 +6,14 @@ import SecurityBox from './Security/SecurityBox';
 import PacketBar from './PacketBar/PacketBar';
 import JsonData from './assets/data/MOCK_DATA.json';
 import { useState } from 'react';
+
 const App: React.FC = () => {
   const [index, setIndex] = useState(0);
 
   const changeIndex= (i:any) =>{
     setIndex(i.target.value);
-  }
+  };
+
   console.log(JsonData[index]);
   
   return (
