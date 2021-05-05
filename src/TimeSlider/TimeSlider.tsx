@@ -39,6 +39,21 @@ const TimeSlider: React.FC<{onChangeValue:any}> = (props) => {
             <option value="20">Experiment 21</option>
             <option value="21">Experiment 22</option>
             <option value="22">Experiment 23</option>
+            <option value="23">Experiment 24</option>
+            <option value="24">Experiment 25</option>
+            <option value="25">Experiment 26</option>
+            <option value="26">Experiment 27</option>
+            <option value="27">Experiment 28</option>
+            <option value="28">Experiment 29</option>
+            <option value="29">Experiment 30</option>
+            <option value="30">Experiment 31</option>
+            <option value="31">Experiment 32</option>
+            <option value="32">Experiment 33</option>
+            <option value="33">Experiment 34</option>
+            <option value="34">Experiment 35</option>
+            <option value="35">Experiment 36</option>
+            <option value="36">Experiment 37</option>
+            <option value="37">Experiment 38</option>
         </select>
         <div className="select-icon">
         <svg focusable="false" viewBox="0 0 104 128" width="25" height="35" className="icon">
