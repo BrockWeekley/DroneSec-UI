@@ -11,12 +11,12 @@ import './PacketBar.css'
 const PacketBar: React.FC<{jdata:any}> = (props) =>{
 
   const packet_list = props.jdata.map((packet: any) =>
-  <tr key={packet.time}>
-    <td >{packet.time}</td>
-    <td  >{packet.PacketsRecieved}</td>
-    <td  >{packet.ACKsRecieved}</td>
+  <tr key={packet.Time}>
+    <td >{packet.Time}</td>
+    <td  >{packet.PacketsReceived}</td>
+    <td  >{packet.ACKsReceived}</td>
     <td  >{packet.PacketsLost}</td>
-    <td  >{packet.GoodPut}</td>
+    <td  >{packet.Goodput}</td>
   </tr>
   );
 

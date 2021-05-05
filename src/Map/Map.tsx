@@ -65,7 +65,12 @@ const Map: React.FC<{dataIndex:any}> = (props) => {
   
   const geojson: GeoJSON.Feature = Missouri;
 
-  const droneMarkers = React.useMemo(() => dronePos.map(
+  const droneCount: number[] = [1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5];
+  let count: number = droneCount[props.dataIndex];
+  console.log("index: " + props.dataIndex + " value: " + droneCount[props.dataIndex]);
+  console.log("size: " + dronePos.slice(0, count).length);
+
+  const droneMarkers = React.useMemo(() => dronePos.slice(0, count).map(
     (drone: any) => (
       <Marker latitude={drone.latitude} longitude={drone.longitude} key={drone.id} className="marker">
         <img onClick={() => { setDroneDisplay(drone) }} className="drone-icon" src={droneImg} alt="drone" />
