@@ -40,7 +40,7 @@ const drones: any = [
 ];
 
 const Map: React.FC<{dataIndex:any}> = (props) => {
-  console.log(FlightData[props.dataIndex].latitude);
+  // console.log(FlightData[props.dataIndex].latitude);
   
   const [dronePos, setDronePos] = useState(drones);
   const [droneDisplay, setDroneDisplay] = useState({
@@ -122,9 +122,9 @@ const Map: React.FC<{dataIndex:any}> = (props) => {
           <Layer {...stateLayer} />
         </Source>
       </ReactMapGl>
-      <button onClick={() =>{
+      {/* <button onClick={() =>{
         changeDrone();
-      }}>Clickme</button>
+      }}>Clickme</button> */}
     </div>
   );
 };

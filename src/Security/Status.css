@@ -1,15 +1,24 @@
-.container {
-    height: 5em;
-    display: flex;
-    justify-content: center;
-    place-items: center;
-    border: solid lightgrey 1px;
-    background-color: whitesmoke;
-    box-shadow: 3px 3px 6px grey;
-    border-radius: 4px;
+.containerie {
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  border: solid lightgrey 1px;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 6px grey;
+  border-radius: 4px;
+  width: 100%;
 }
 
-.all-clear {
-    background-color: mediumseagreen;
-    color: white;
+.clear {
+  background-color: #5cb85c;
+  color: #f7f7f7;
+}
+.warn {
+  background-color: #f0ad4e;
+  color: #292b2c;
+}
+.error {
+  background-color: #d9534f;
+  color: #292b2c;
 }
