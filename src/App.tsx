@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <Map dataIndex = {index}/>
         <PacketBar jdata = {JsonData[index].networkData} />
       </div>
-      <SecurityBox jdata = {JsonData[index].ContainerStatus}/>
+      <SecurityBox jdata = {[JsonData[index].ContainerStatus, JsonData[index].packet]}/>
     </div>
   );
 };
