@@ -5,7 +5,7 @@ import ContainerStatus from './ContainerStatus';
 const SecurityBox: React.FC<{jdata:any}> = (props) => {
     let content;
     if(props.jdata==="warn")
-        content = "warning - Possible attack detected";
+        content = "warning - Attack detected";
     else if(props.jdata==="error")
         content = "Error - Container comprimised"
     else content = "No attacks detected - all clear"
