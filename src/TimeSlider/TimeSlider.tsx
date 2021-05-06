@@ -54,6 +54,7 @@ const TimeSlider: React.FC<{onChangeValue:any}> = (props) => {
             <option value="35">Experiment 36</option>
             <option value="36">Experiment 37</option>
             <option value="37">Experiment 38</option>
+            <option value="38">Experiment 39</option>
         </select>
         <div className="select-icon">
         <svg focusable="false" viewBox="0 0 104 128" width="25" height="35" className="icon">

@@ -16,7 +16,7 @@ const PacketBar: React.FC<{jdata:any}> = (props) =>{
     <td  >{packet.PacketsReceived}</td>
     <td  >{packet.ACKsReceived}</td>
     <td  >{packet.PacketsLost}</td>
-    <td  >{packet.Goodput}</td>
+    <td  >{packet.GoodPut}</td>
   </tr>
   );
 
