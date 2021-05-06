@@ -2,14 +2,9 @@ import * as React from 'react';
 import './Status.css';
 
 const CommunicationStatus: React.FC <{status:any, passStyle:any}> = (props) => {
-    let containerState, containerContent="All containers operational";
-    
-    if(props.passStyle==="error"){
-        containerState ="error";
-        containerContent = "Containers Comprimised, shutting down";
-}else containerState = "clear";
+    const containerContent = props.status;
     return(
-        <div className={"containerie " +  containerState}>
+        <div className={"containerie " + props.passStyle} >
             {containerContent}
         </div>
     );

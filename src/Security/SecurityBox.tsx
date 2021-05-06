@@ -3,17 +3,22 @@ import CommunicationStatus from './CommunicationStatus';
 import ContainerStatus from './ContainerStatus';
 
 const SecurityBox: React.FC<{jdata:any}> = (props) => {
-    let content;
-    if(props.jdata[0] ==="warn")
-        content = "warning - Attack detected on " + props.jdata[1] + " packets";
-    else if(props.jdata[0]==="error")
-        content = "Error - Container comprimised"
-    else content = "No attacks detected - all clear"
+    let content, content2;
+    if(props.jdata[0] ==="warn") {
+        content = "warning - Attack detected on " + props.jdata[1] + "/303 packets";
+        content2 = "Container Shut Down";
+    } else if (props.jdata[0]==="error") {
+        content = "Error - Container comprimised";
+        content2 = "Compromised";
+    } else {
+        content = "No attacks detected - all clear"
+        content2 = "All Containers Operational";
+    }
     
     return(
         <div>
             
-            <CommunicationStatus status={content} passStyle={props.jdata}/>
+            <CommunicationStatus status={content2} passStyle={props.jdata[0]}/>
             <ContainerStatus status={content} passStyle={props.jdata[0]}/>
         </div>
     );
