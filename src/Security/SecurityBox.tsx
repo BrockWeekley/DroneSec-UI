@@ -8,10 +8,10 @@ const SecurityBox: React.FC<{jdata:any}> = (props) => {
         content = "warning - Attack detected on " + props.jdata[1] + "/303 packets";
         content2 = "Container Shut Down";
     } else if (props.jdata[0]==="error") {
-        content = "Error - Container comprimised";
+        content = "Error - Container Comprimised";
         content2 = "Compromised";
     } else {
-        content = "No attacks detected - all clear"
+        content = "No Attacks Detected"
         content2 = "All Containers Operational";
     }
     
